@@ -1,0 +1,129 @@
+body {
+  /* margin: auto 0; */
+  padding: 0 15px;
+}
+
+
+.top-bar {
+  display: block;
+  /* background-color: #ffcccc; */
+  /* background-color: #34495e; */
+  height: 40px;
+  padding: 0 30px;
+  margin-top: 35px;
+}
+
+/* nav {
+  display: block;
+} */
+
+hr {
+  /* clear from overflow */
+  clear: both;
+}
+
+.my-name {
+  display: inline-block;
+  color: #3d3d3d;
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+  float: left;
+  text-transform: uppercase;
+
+}
+
+.resume-link, .linkedin-link, .github-link, a {
+  /* display: inline-block;
+  white-space: nowrap; */
+  overflow: hidden;
+  color: #3d3d3d;
+  font-family: 'Lato', sans-serif;
+  float: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+
+.profile-pic-container {
+  text-align: center;
+  margin: 30px 0 0 0;
+  /* float: left; */
+}
+
+.profile-pic {
+  width: 200px;
+  clip-path: circle(40%);
+  /* this is NOT the right way to do this because it's adding
+  padding aroud the image that I don't want */
+  padding-top: 30px;
+  padding-right: 5px;
+}
+
+.about-me-block {
+  display: block;
+
+}
+
+#about-header {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+}
+
+.about-me {
+  overflow: hidden;
+  margin: 0 30px;
+  font-family: 'poppins', sans-serif;
+  line-height: 1.5em;
+}
+
+#projects-header {
+  clear: both;
+  margin-top: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  padding: 15px 0;
+}
+
+/* Controls the project grid */
+.portfolio {
+  display: grid;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* use below line once adding more images to the grid */
+  /*grid-template-columns: 20px 100px [.portfolio-start] 1fr 1fr 1fr [.portfolio-end] 100px 20px;*/
+  align-items: center;
+  width: 80%;
+  object-fit: cover;
+}
+
+.portfolio-bgcolor {
+  /* background-color: #33d9b2; */
+  background-color: rgba(33, 139, 112, .2);
+  padding: 20px 40px;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+#portfolio-wrapper {
+  text-align: center;
+}
+
+img { /* all img tags that are children of the .box class */
+    max-width: 100%;
+
+ }
