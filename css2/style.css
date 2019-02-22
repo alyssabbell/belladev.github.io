@@ -13,10 +13,6 @@ body {
   margin-top: 35px;
 }
 
-/* nav {
-  display: block;
-} */
-
 hr {
   /* clear from overflow */
   clear: both;
@@ -44,6 +40,7 @@ hr {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 10px;
+
 }
 
 a:hover {
@@ -85,26 +82,31 @@ a:hover {
 
 #projects-header {
   clear: both;
+  text-align: center;
   margin-top: 50px;
   font-family: 'Dancing Script', cursive;
   font-size: 32px;
   padding: 15px 0;
 }
 
+
+
 /* Controls the project grid */
 .portfolio {
   display: grid;
-  text-align: center;
+  margin: 0 auto;
   align-self: center;
   justify-content: center;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
   /* use below line once adding more images to the grid */
   /*grid-template-columns: 20px 100px [.portfolio-start] 1fr 1fr 1fr [.portfolio-end] 100px 20px;*/
-  align-items: center;
+  /* align-items: center; */
   width: 80%;
   object-fit: cover;
 }
+
 
 .portfolio-bgcolor {
   /* background-color: #33d9b2; */
@@ -115,15 +117,12 @@ a:hover {
 .grid-item {
   width: 100%;
   height: 100%;
-  background-color: white;
-  border: 1px solid gray;
+  /* background-color: white; */
 }
 
-#portfolio-wrapper {
-  text-align: center;
-}
-
-img { /* all img tags that are children of the .box class */
-    max-width: 100%;
-
+img {
+    max-width: 90%;
+    /* [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+    box-shadow: 6px 4px 8px 4px #888888;
+    margin-bottom: 30px;
  }
