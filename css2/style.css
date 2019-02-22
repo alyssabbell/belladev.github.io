@@ -120,7 +120,7 @@ a:hover {
   /* background-color: white; */
 }
 
-img {
+.portfolio-image {
     max-width: 90%;
     /* [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
     box-shadow: 6px 4px 8px 4px #888888;
